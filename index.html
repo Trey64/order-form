@@ -2,10 +2,68 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title> BUS MALL PRODUCT ORDER FORM  </title>
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
+
   <body>
+<form id = "userInput">
+
+<select for="chooseProd" name = "chooseProd">
+  <option value = "bag"> Bag </option>
+  <option value = "banana"> Banana </option>
+  <option value = "bathroom"> Bathroom </option>
+  <option value = "boots"> Boots </option>
+  <option value = "breakfast"> Breakfast </option>
+  <option value = "bubblegum"> Bubblegum </option>
+  <option value = "chair"> Chair </option>
+  <option value = "Cthulhu"> Cthulhu </option>
+  <option value = "dog-duck"> Dog Duck </option>
+  <option value = "dragon"> Dragon </option>
+  <option value = "pen"> Pen </option>
+  <option value = "pet-sweep"> Pet Sweeper </option>
+  <option value = "scissors"> Scissors </option>
+  <option value = "shark"> Shark </option>
+  <option value = "sweep"> Sweep </option>
+  <option value = "tauntaun"> Tauntaun </option>
+  <option value = "unicorn"> Unicorn </option>
+  <option value = "usb"> USB </option>
+  <option value = "water-can"> Water Can </option>
+  <option value = "wine-glass"> Wine Glas </option>
+</select>
+
+<hr />
+<label for = "amount"> Quantity: <input type = "number" name = "amount" /> </label>
+
+<hr />
+
+<fieldset>
+  <legend> Credit Card Info. </legend>
+  <label for="credit"> 16 digit credit card #: <br />
+  <input id="credit" type = "text" name = "credit" /></label><br /><br />
+
+  <legend> Customer Info </legend>
+  <label for="name"> Name:  </br />
+  <input id='name' type = "text" name = "name" /></label><br />
+  <label for="street"> Street: </br />
+  <input id="street" type = "text" name = "street" /></label><br />
+  <label for"city"> City:  </br />
+  <input id="city" type = "text" name = "city" /></label><br />
+  <label for="zip"> Zip Code:  </br />
+  <input id="zip" type = "text" name = "zip" /></label><br />
+  <label for="state"> State: </br />
+  <input id="state" type = "text" name = "state" /></label><br />
+  <label for="phone"> Telephone:  </br />
+  <input id="phone" type = "text" name = "phone" /></label><br />
+
+<button id="submit">Submit</button>
+
+</fieldset>
+
+
+
+</form>
+
 
   <script src="app.js"></script>
   </body>
