@@ -2,10 +2,68 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title> BUS MALL PRODUCT ORDER FORM  </title>
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
+
   <body>
+<form id = "userInput">
+
+<select name = "chooseProd">
+  <option value = "bag"> Bag </option>
+  <option value = "banana"> Banana </option>
+  <option value = "bathroom"> Bathroom </option>
+  <option value = "boots"> Boots </option>
+  <option value = "breakfast"> Breakfast </option>
+  <option value = "bubblegum"> Bubblegum </option>
+  <option value = "chair"> Chair </option>
+  <option value = "Cthulhu"> Cthulhu </option>
+  <option value = "dog-duck"> Dog Duck </option>
+  <option value = "dragon"> Dragon </option>
+  <option value = "pen"> Pen </option>
+  <option value = "pet-sweep"> Pet Sweeper </option>
+  <option value = "scissors"> Scissors </option>
+  <option value = "shark"> Shark </option>
+  <option value = "sweep"> Sweep </option>
+  <option value = "tauntaun"> Tauntaun </option>
+  <option value = "unicorn"> Unicorn </option>
+  <option value = "usb"> USB </option>
+  <option value = "water-can"> Water Can </option>
+  <option value = "wine-glass"> Wine Glas </option>
+</select>
+
+<hr />
+<label id = "amount"> Quantity: <input type = "number" name = "amount" /> </label>
+
+<hr />
+
+<fieldset>
+  <legend> Credit Card Info. </legend>
+  <label> 16 digit credit card #: <br />
+  <input type = "text" name = "creditCard" /></label><br /><br />
+  <legend> Customer Info </legend>
+  <label> Name:  </br />
+  <input type = "text" name = "name" /></label><br />
+  <label> Street: </br />
+  <input type = "text" name = "street" /></label><br />
+  <label> City:  </br />
+  <input type = "text" name = "city" /></label><br />
+  <label> Zip Code:  </br />
+  <input type = "text" name = "zip" /></label><br />
+  <label> State: </br />
+  <input type = "text" name = "state" /></label><br />
+  <label> Telephone:  </br />
+  <input type = "text" name = "phone" /></label><br />
+
+<input type = "submit" name = "Submit" vlaue = "submit">
+
+
+</fieldset>
+
+
+
+</form>
+
 
   <script src="app.js"></script>
   </body>
