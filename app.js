@@ -1,8 +1,9 @@
 'use strict';
-//
+
 // index.html stuff
 
 Customer.all = [];
+var newCustomer;
 
 function Customer(prod, amount, credit, name, st, city, zip, state, phone) {
   this.prod = prod;
@@ -18,21 +19,6 @@ function Customer(prod, amount, credit, name, st, city, zip, state, phone) {
   Customer.all.push(this);
 }
 
-
-
-// var cusName = document.getElementById('name').value;
-// var cusStreet = document.getElementById('street').value;
-// var cusCity = document.getElementById('city').value;
-// var cusState = document.getElementById('state').value;
-// var cusZip = document.getElementById('zip').value;
-// var cusPhone = document.getElementById('phone').value;
-// var cusCard = document.getElementById('card').value;
-
-// var newCustomer = new Customer(cusName, cusStreet, cusCity, cusState, cusZip, cusPhone, cusCard);
-
-
-// var allProductNames = ['bag', 'banana', 'bathroom', 'boots', 'breakfast', 'bubblegum', 'chair', 'cthulhu', 'dog-duck', 'dragon', 'pen', 'pet-sweep', 'scissors', 'shark', 'sweep', 'tauntaun', 'unicorn', 'usb', 'water-can', 'wine-glass'];
-
 // function showList() {
   // var ulEl = document.getElementById('customerInfoList');
   // for(var i = 0; i < Image.all.length; i++) {
@@ -44,7 +30,7 @@ function Customer(prod, amount, credit, name, st, city, zip, state, phone) {
   //   ulEl.appendChild(liEl);
   // }
 // }
-var newCustomer;
+
 
 // // add to cart handler
 function handleSubmit(event) {
@@ -60,22 +46,24 @@ function handleSubmit(event) {
   var phone = parseInt(event.target.phone.value);
 
   newCustomer = new Customer(prod, amount, credit, name, st, city, zip, state, phone);
-  // localStorage.orderData = JSON.stringify(newCustomer);
+  localStorage.setItem('cartItems', JSON.stringify(Customer.all));
 }
 
 
 document.getElementById('userInput').addEventListener('submit', handleSubmit);
 // local storage
-// if(localStorage.orderData) {
-//   console.log('stuff in local storage');
-//   Customer.all = JSON.parse(localStorage.orderData);
-// } else {
-//   console.log('nothing in local storage');
-// }
+
+
+if(localStorage.cartItems) {
+  console.log('stuff in local storage');
+  Customer.all = JSON.parse(localStorage.getItem('cartItems'));
+  localStorage.setItem('cartItems', JSON.stringify(Customer.all));
+} else {
+  console.log('nothing in local storage');
+}
 
 
 // cart.html stuff
-
 // document.getElementById('delete').addEventListener('click', function(){
 //   localStorage.clear();
 // });
