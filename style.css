@@ -30,6 +30,7 @@ fieldset {
 }
 
 button {
+  display: inline-block;
   font-family: 'Rubik', sans-serif;
   height: 40px;
   font-size: 16px;
