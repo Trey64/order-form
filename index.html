@@ -4,12 +4,14 @@
     <meta charset="utf-8">
     <title> BUS MALL PRODUCT ORDER FORM  </title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik|Trirong" rel="stylesheet">
   </head>
 
   <body>
+    <h1>Bus Mall Order Form</h1>
+    <h2>Choose your product!</h2>
 <form id = "userInput">
-
-<select for="chooseProd" name = "chooseProd">
+<select id="dropMenu" for="chooseProd" name = "chooseProd">
   <option value = "bag"> Bag </option>
   <option value = "banana"> Banana </option>
   <option value = "bathroom"> Bathroom </option>
@@ -33,29 +35,30 @@
 </select>
 
 <hr />
-<label for = "amount"> Quantity: <input type = "number" name = "amount" /> </label>
+<label for = "amount"> Quantity: <br /><input id="quantity" type = "number" name = "amount" /> </label>
 
 <hr />
 
+<h2>Please enter your information below</h2>
 <fieldset>
-  <legend> Credit Card Info. </legend>
+  <h3> Credit Card Info. </h3>
   <label for="credit"> 16 digit credit card #: <br />
-  <input id="credit" type = "text" name = "credit" /></label><br /><br />
+  <input class="customerInput" type = "text" name = "credit" /></label><br /><br />
 
-  <legend> Customer Info </legend>
+  <h3> Customer Info </h3>
   <label for="name"> Name:  </br />
-  <input id='name' type = "text" name = "name" /></label><br />
+  <input class='customerInput' type = "text" name = "name" /></label><br />
   <label for="street"> Street: </br />
-  <input id="street" type = "text" name = "street" /></label><br />
+  <input class="customerInput" type = "text" name = "street" /></label><br />
   <label for"city"> City:  </br />
-  <input id="city" type = "text" name = "city" /></label><br />
+  <input class="customerInput" type = "text" name = "city" /></label><br />
   <label for="zip"> Zip Code:  </br />
-  <input id="zip" type = "text" name = "zip" /></label><br />
+  <input class="customerInput" type = "text" name = "zip" /></label><br />
   <label for="state"> State: </br />
-  <input id="state" type = "text" name = "state" /></label><br />
+  <input class="customerInput" type = "text" name = "state" /></label><br />
   <label for="phone"> Telephone:  </br />
-  <input id="phone" type = "text" name = "phone" /></label><br />
-
+  <input class="customerInput" type = "text" name = "phone" /></label><br />
+<br />
 <button id="submit">Submit</button>
 
 </fieldset>

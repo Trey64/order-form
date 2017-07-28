@@ -1,0 +1,41 @@
+
+
+h1, h2 {
+  font-family: 'Trirong', serif;
+  color: #454140;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  background-color: #92B6D5;
+  text-align: center;
+}
+
+#dropMenu {
+  font-size: 16px;
+}
+
+#quantity {
+  width: 200px;
+  font-size: 16px;
+}
+
+.customerInput {
+  width: 300px;
+  font-size: 16px;
+}
+
+fieldset {
+  text-align: center;
+}
+
+button {
+  font-family: 'Rubik', sans-serif;
+  height: 40px;
+  font-size: 16px;
+  color: white;
+  border-color: #004B8D;
+  background-color: #88B04B;
+  border-width:medium;
+  border-radius: 10px;
+}
