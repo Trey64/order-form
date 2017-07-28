@@ -33,6 +33,7 @@ function handleSubmit(event) {
 
   new Customer(prod, amount, credit, name, st, city, zip, state, phone);
   localStorage.setItem('cartItems', JSON.stringify(Customer.all));
+  document.getElementById('userInput').reset();
 }
 
 
