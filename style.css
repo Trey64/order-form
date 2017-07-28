@@ -2,7 +2,7 @@
 
 h1, h2 {
   font-family: 'Trirong', serif;
-  color: #454140;
+  color: #242929;
 }
 
 #indexBody {
@@ -35,8 +35,8 @@ button {
   height: 50px;
   font-size: 16px;
   color: white;
-  border-color: #004B8D;
-  background-color: #88B04B;
+  border-color: #36486b;
+  background-color: #005960;
   border-width:medium;
   border-radius: 10px;
 }
@@ -58,21 +58,21 @@ img {
 }
 
 table {
-	border: 8px solid black;
+	border: 8px solid #3e4444;
   border-radius: 5px;
 }
 
 td {
   font-family: 'Rubik', sans-serif;
-  background-color: gray;
+  background-color: #618685;
   color: white;
 	padding: 10px;
   text-align: center;
 	border-radius: 10px;
-  border: 1px solid black;
+  border: 1px solid #3e4444;
 }
 
 th {
-	background-color: navy;
+	background-color: #034F84;
 	color: white;
 }
