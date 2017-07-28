@@ -1,7 +1,5 @@
 'use strict';
 
-// index.html stuff
-
 Customer.all = [];
 var newCustomer;
 
@@ -19,20 +17,8 @@ function Customer(prod, amount, credit, name, st, city, zip, state, phone) {
   Customer.all.push(this);
 }
 
-// function showList() {
-  // var ulEl = document.getElementById('customerInfoList');
-  // for(var i = 0; i < Image.all.length; i++) {
-  //   // create element
-  //   var liEl = document.createElement('li');
-  //   // give it content
-  //   liEl.textContent = Customer.name
-  //   // append it to DOM
-  //   ulEl.appendChild(liEl);
-  // }
-// }
 
-
-// // add to cart handler
+// // submit handler
 function handleSubmit(event) {
   event.preventDefault();
   var prod = event.target.chooseProd.value;
@@ -51,9 +37,8 @@ function handleSubmit(event) {
 
 
 document.getElementById('userInput').addEventListener('submit', handleSubmit);
+
 // local storage
-
-
 if(localStorage.cartItems) {
   console.log('stuff in local storage');
   Customer.all = JSON.parse(localStorage.getItem('cartItems'));
@@ -61,9 +46,3 @@ if(localStorage.cartItems) {
 } else {
   console.log('nothing in local storage');
 }
-
-
-// cart.html stuff
-// document.getElementById('delete').addEventListener('click', function(){
-//   localStorage.clear();
-// });
